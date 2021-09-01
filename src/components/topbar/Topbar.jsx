@@ -35,13 +35,13 @@ export default function Topbar( {menuOpen, setMenuOpen} ) {
 							className="linked"
 						>
 							<LinkedIn className="icon" />
-							LinkedIn
+							<span>LinkedIn</span>
 						</a>
 					</div>
 					<div className="itemContainer">
 						<a href="https://github.com/RustyCG" className="linked">
 							<GitHub className="icon" />
-							GitHub
+							<span>GitHub</span>
 						</a>
 					</div>
 				</div>

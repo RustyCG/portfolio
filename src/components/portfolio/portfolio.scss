@@ -33,7 +33,6 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: red;
 
         @include mobile {
             width: 100%;
@@ -41,13 +40,13 @@
         }
 
         .item {
-            // width: 220px;
-            // height: 150px;
-            width: 350px;
-            height: 250px;
+            // width: 350px;
+            // height: 250px;
+            width: 20vw;
+            height: 22vh;
             border-radius: 20px;
             border: 1px solid rgb(150, 150, 150);
-            margin: 10px 20px;
+            margin: 20px 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -55,6 +54,7 @@
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
+            z-index: 0;
 
             @include mobile {
                 width: 130px;
