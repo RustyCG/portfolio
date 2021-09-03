@@ -1,236 +1,316 @@
 @import "../../global.scss";
 
 .contact {
-    background-color: $mainDarkColor;
-    color: $mainLightColor;
-    display: flex;
+	color: $mainLightColor;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-    @include mobile {
-        flex-direction: column;
-    }
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		color: $mainLightColor;
+		margin-bottom: 1rem;
 
-    .leftContainer {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        padding-right: 2vw;
+		@include mobile {
+			font-size: 20px;
+		}
+	}
+	.subtitle {
+		color: $mainLightColor;
+		text-align: center;
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
 
-        .icon {
-            width: 500px;
-            height: auto;
-        }
-    }
+		&.error {
+			padding: 3rem;
+		}
+		&.sent {
+			padding: 1rem;
+			background-color: red;
+		}
+	}
 
-    .rightContainer {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+	.contactContainer {
+		display: flex;
+		width: 1200px;
+		border-radius: 8px;
+		overflow: hidden;
+		padding: 15px 10px 15px 10px;
+		background-color: $mainOverlayColor;
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		-webkit-box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+		-moz-box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+		box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
 
-        .right {
-            flex: 1;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+		@include mobile {
+			width: 100%;
+			padding: 0.8rem;
+		}
 
-            h2 {
-                font-size: 50px;
-                
-                @include mobile {
-                    overflow: hidden;
-                }
-            }
+		.leftContainer {
+			flex: 0 1 40%;
+			display: flex;
+			flex-direction: column;
+			border-radius: 8px;
+			padding: 30px;
+			overflow: hidden;
+			background-color: rgba(0, 0, 171, 0.527);
+			color: $mainLightColor;
 
-            form {
-                width: 70%;
-                height:60%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
+			@include mobile {
+				display: none;
+			}
 
-                @include mobile {
-                    width: 90%;
-                    height: 90%;
-                    padding: 10px 0;
-                }
-                .details {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+			h4 {
+				font-size: 2rem;
+				font-weight: 500;
+				margin-top: 0;
+				margin-bottom: 1.2rem;
+			}
 
-                    input {
-                        width: 400px;
-                        height: 30px;
-                        font-size: 14px;
-                        border-radius: 10px;
-                        padding-left: 10px;
+			p {
+				font-size: 1.2rem;
+				margin: 0;
+				color: rgba(242, 242, 242, 0.8);
+				font-weight: 300;
+				margin-bottom: 1.8rem;
+			}
 
-                        @include mobile {
-                            width: 300px;
-                            height: 20px;
-                        }
-                    }
-                }
+			.iconText {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				margin-bottom: 1rem;
 
-                textarea {
-                    width: 400px;
-                    height: 300px;
-                    font-size: 14px;
-                    border-radius: 10px;
-                    padding-top: 10px;
-                    padding-left: 10px;
+				.icon {
+					width: 25px;
+					height: auto;
+					margin-right: 0.8rem;
+					color: $mainLightColor;
+				}
+				span {
+					font-size: 1rem;
+					font-weight: 300;
+					color: $mainLightColor;
+				}
+				a {
+					font-size: 1rem;
+					font-weight: 300;
+					text-decoration: none;
+					color: $mainLightColor;
+					cursor: pointer;
+				}
+			}
+			.socialMedia {
+				display: flex;
+				justify-content: space-between;
+				width: 80%;
+				margin-top: 1.8rem;
+				padding-left: 2rem;
+
+				.iconCircle {
+					flex: 0 0 35px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 35px;
+					border-radius: 50%;
+					transition: 0.3s all ease-in-out;
+
+					&:hover {
+						background: rgba(76, 91, 128, 1);
+					}
+
+					.icon {
+						color: $mainLightColor;
+						width: 25px;
+						height: auto;
+					}
+				}
+			}
+		}
+
+		.rightContainer {
+			padding: 20px 40px 0px 40px;
+			width: 100%;
+
+			@include mobile {
+				padding: 0.2rem;
+			}
+
+			.col {
+				display: flex;
+				width: 100%;
+				flex: 0 0 100%;
+
+				@include mobile {
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+
+				&.user-msg {
+					transition: 0.8s all ease-in-out;
+				}
+			}
+			.form-group {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				flex: 0 1 100%;
+				padding-right: 40px;
+
+				@include mobile {
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding-right: 0;
+					width: 100%;
+				}
+
+				label {
+					font-size: 0.9rem;
+					color: rgba(255, 255, 255, 0.6);
+					margin-bottom: 0.5rem;
+
+					@include mobile {
+						margin-bottom: 0.1rem;
+					}
+				}
+				input[type="text"],
+				input[type="tel"],
+				input[type="email"],
+				textarea {
+					background: transparent;
+					border: none;
+					border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+					padding: 5px;
+					font-size: 1.1rem;
+					font-weight: 200;
+					cursor: pointer;
+					color: white;
+					transition: 0.3s all ease-in-out;
+					margin-bottom: 2rem;
+
+					@include mobile {
+						margin-bottom: 0.8rem;
+						padding: 2px;
+						width: 200px;
+					}
+
+					&:focus {
+						border: none;
+						outline: none;
+						border-bottom: 2px solid $mainLightColor;
+					}
+				}
+				.message {
+					@include mobile {
+						width: 90%;
+                        font-size: 0.9rem;
+					}
+				}
+				&:nth-child(2) {
+					padding-right: 0;
+				}
+
+				#reply {
+					font-size: 1.1rem;
+
+					@include mobile {
+						font-size: 1rem;
+					}
+				}
+
+				#radioBtns {
+					display: flex;
+					justify-content: flex-start;
+					margin-top: 1rem;
+					margin-bottom: 2rem;
+
+					@include mobile {
+						justify-content: center;
+                        margin-bottom: 0.5rem;
+					}
+
+					.radioBtn {
+						margin-right: 2rem;
+
+						@include mobile {
+							margin-right: 0.8rem;
+						}
+					}
+
+					label {
+						font-size: 1rem;
+						margin-left: 0.5rem;
+
+						@include mobile {
+							font-size: 0.8rem;
+						}
+					}
+					input[type="radio"]:checked + label {
+						color: rgba(255, 255, 255, 1);
+						font-weight: 600;
+					}
+				}
+
+				&.solo {
+					padding: 0;
+				}
+				&.right {
+					align-items: flex-end;
+				}
+				button {
+					width: 150px;
+					height: 30px;
+					cursor: pointer;
+					background: $mainLightColor;
+					color: $mainDarkColor;
+					border: none;
+					text-transform: uppercase;
+					border-radius: 8px;
 
                     @include mobile {
-                        width: 300px;
-                        height: 125px;
+                        width: 100px;
+                        height: 20px
                     }
-                }
 
-                button {
-                    width: 150px;
-                    height: 30px;
-                    color: $mainDarkColor;
-                    background-color: mistyrose;
-                    border: none;
-                    border-radius: 10px;
-                    font-weight: 500;
-                    cursor: pointer;
+					&:hover {
+						color: blue;
+						font-weight: 600;
+						transition: 0.2s all ease-in-out;
+					}
 
-                    &:focus {
-                        outline: none;
-                    }
-                }
+					&.inactive {
+						background: $mainDarkColor;
+						color: grey;
+						transition: 0.3s all ease-in-out;
+					}
+				}
+				.user-message {
+					color: $mainLightColor;
+					text-align: center;
+					font-size: 1.2rem;
+					border-radius: 8px;
 
-                span {
-                    color: whitesmoke;
-
-                    @include mobile {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
+					&.sent {
+						padding: 0.2rem;
+						margin-top: 0.5rem;
+						background-color: rgba(0, 0, 171, 0.527) !important;
+						transition: 0.8s all ease-in-out !important;
+					}
+					&.error {
+						padding: 0.2rem;
+						margin-top: 0.5rem;
+						background-color: red !important;
+						transition: 0.8s all ease-in-out !important;
+					}
+				}
+			}
+		}
+	}
 }
-
-// @import "../../global.scss";
-
-// .contact {
-//     background-color: $mainDarkColor;
-//     color: $mainLightColor;
-//     display: flex;
-
-//     @include mobile {
-//         flex-direction: column;
-//     }
-
-//     .left {
-//         flex: 1;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-end;
-//         justify-content: center;
-//         overflow: hidden;
-//         padding-right: 2vw;
-
-//         .icon {
-//             width: 500px;
-//             height: auto;
-//         }
-//     }
-
-//     .right {
-//         flex: 1;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: center;
-//         background-color: green;
-
-//         h2 {
-//             font-size: 30px;
-            
-//             @include mobile {
-//                 overflow: hidden;
-//             }
-//         }
-
-//         form {
-//             width: 70%;
-//             height:60%;
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             justify-content: space-around;
-
-//             @include mobile {
-//                 width: 90%;
-//                 height: 90%;
-//                 padding: 10px 0;
-//             }
-//             .details {
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: center;
-//                 justify-content: center;
-
-//                 input {
-//                     width: 400px;
-//                     height: 30px;
-//                     font-size: 14px;
-//                     border-radius: 10px;
-//                     padding-left: 10px;
-
-//                     @include mobile {
-//                         width: 300px;
-//                         height: 20px;
-//                     }
-//                 }
-//             }
-
-//             textarea {
-//                 width: 400px;
-//                 height: 300px;
-//                 font-size: 14px;
-//                 border-radius: 10px;
-//                 padding-top: 10px;
-//                 padding-left: 10px;
-
-//                 @include mobile {
-//                     width: 300px;
-//                     height: 125px;
-//                 }
-//             }
-
-//             button {
-//                 width: 150px;
-//                 height: 30px;
-//                 color: $mainDarkColor;
-//                 background-color: mistyrose;
-//                 border: none;
-//                 border-radius: 10px;
-//                 font-weight: 500;
-//                 cursor: pointer;
-
-//                 &:focus {
-//                     outline: none;
-//                 }
-//             }
-
-//             span {
-//                 color: whitesmoke;
-
-//                 @include mobile {
-//                     display: none;
-//                 }
-//             }
-//         }
-//     }
-// }
