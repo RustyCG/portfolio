@@ -12,9 +12,9 @@ export default function Modal({toggleModal, icon, title, desc, site, git, img}) 
 
 	return (
 		<div className="modal">
-			<div className={"modal-wrapper"} id={"modal-wrapper"}>
-				<div onClick={toggleModal} className={"modal-overlay"} />
-				<div className={"modal-box"}>
+			<div className="modal-wrapper" id="modal-wrapper">
+				<div onClick={toggleModal} className="modal-overlay" />
+				<div className="modal-box">
 					<button className="close-modal" onClick={toggleModal}>
 						&times;
 					</button>

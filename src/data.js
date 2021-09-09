@@ -1,45 +1,45 @@
-import {VideogameAsset, Storage, Language, Dashboard } from "@material-ui/icons"
+// import {VideogameAsset, Storage, Language, Dashboard } from "@material-ui/icons"
 
 export const featuredPortfolio = [
     {
         id: 1,
         icon: "VideogameAsset",
-        title: "Tic Tac Toe Game App",
-        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum iusto beatae soluta molestias hic, libero commodi optio corporis consequatur voluptate voluptatum. Consectetur, repellat cumque et sunt velit doloremque laudantium. Reprehenderit obcaecati nisi officiis itaque a magni dolorem cum libero necessitatibus dolore adipisci ipsa placeat eius optio accusantium corporis, quisquam praesentium explicabo ab labore? Nesciunt nam fuga est architecto? Non			Assumenda doloribus laboriosam fuga alias eius, impedit eveniet ab in consequuntur possimus est similique cumque molestiae quia blanditiis eaque delectus libero ullam quaerat quae veritatis at temporibus exercitationem. Laudantium, aliquid!",
-        site: "",
-        git: "",
+        title: "Tic Tac Toe Game",
+        desc: "Simple logic based game built using DOM manipulations and front-end languages HTML, CSS and Javascript.",
+        site: "https://rustycg.github.io/Project1/",
+        git: "https://github.com/RustyCG/Project1",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "/assets/TicTacToe.png",
     },
     {
         id: 2,
-        icon: "https://via.placeholder.com/200",
+        icon: "VideogameAsset",
         title: "ProjecToo",
-        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum iusto beatae soluta molestias hic, libero commodi optio corporis consequatur voluptate voluptatum. Consectetur, repellat cumque et sunt velit doloremque laudantium. Reprehenderit obcaecati nisi officiis itaque a magni dolorem cum libero necessitatibus dolore adipisci ipsa placeat eius optio accusantium corporis, quisquam praesentium explicabo ab labore? Nesciunt nam fuga est architecto? Non			Assumenda doloribus laboriosam fuga alias eius, impedit eveniet ab in consequuntur possimus est similique cumque molestiae quia blanditiis eaque delectus libero ullam quaerat quae veritatis at temporibus exercitationem. Laudantium, aliquid!",
-        site: "",
-        git: "",
+        desc: "ProjectToo is a database backed web application that allows suppliers & manufacturers to privately list equipment - superseeded capital equipment, surplus instruments, near-expired consumable items, etc - and connect those items with the NGO's, NFPs, and Charitable Organisations that need them.",
+        site: "https://secure-escarpment-96330.herokuapp.com/",
+        git: "https://github.com/RustyCG/ProjecToo",
         img:
-            "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+            "/assets/ProjecToo.png",
     },
     {
         id: 3,
-        icon: "https://via.placeholder.com/200",
+        icon: "VideogameAsset",
         title: "HereI",
-        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum iusto beatae soluta molestias hic, libero commodi optio corporis consequatur voluptate voluptatum. Consectetur, repellat cumque et sunt velit doloremque laudantium. Reprehenderit obcaecati nisi officiis itaque a magni dolorem cum libero necessitatibus dolore adipisci ipsa placeat eius optio accusantium corporis, quisquam praesentium explicabo ab labore? Nesciunt nam fuga est architecto? Non			Assumenda doloribus laboriosam fuga alias eius, impedit eveniet ab in consequuntur possimus est similique cumque molestiae quia blanditiis eaque delectus libero ullam quaerat quae veritatis at temporibus exercitationem. Laudantium, aliquid!",
-        site: "",
-        git: "",
+        desc: "A full stack app built for users to be able to book attractions prior to or whilst travelling. Built in Node.js following CRUD operations this webapp makes use of a PostgreSQL database ontop of the Express.js framework.Client - side programmed using HTML & CSS & JS. API integration also seen through the below: Stripe payment gateway, Bing maps. Other cools technologies: Nodemailer, BCrypt, Passport.js",
+        site: "https://thawing-basin-55117.herokuapp.com/",
+        git: "https://github.com/RustyCG/herei/tree/main",
         img:
-            "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+            "/assets/HereI.png",
     },
     {
         id: 4,
-        icon: "https://via.placeholder.com/200",
+        icon: "VideogameAsset",
         title: "Crypto Currency Dashboard",
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum iusto beatae soluta molestias hic, libero commodi optio corporis consequatur voluptate voluptatum. Consectetur, repellat cumque et sunt velit doloremque laudantium. Reprehenderit obcaecati nisi officiis itaque a magni dolorem cum libero necessitatibus dolore adipisci ipsa placeat eius optio accusantium corporis, quisquam praesentium explicabo ab labore? Nesciunt nam fuga est architecto? Non			Assumenda doloribus laboriosam fuga alias eius, impedit eveniet ab in consequuntur possimus est similique cumque molestiae quia blanditiis eaque delectus libero ullam quaerat quae veritatis at temporibus exercitationem. Laudantium, aliquid!",
         site: "",
         git: "",
         img:
-            "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+            "https://via.placeholder.com/400",
     },
     // {
     //     id: 5,
@@ -48,14 +48,6 @@ export const featuredPortfolio = [
     //     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum iusto beatae soluta molestias hic, libero commodi optio corporis consequatur voluptate voluptatum. Consectetur, repellat cumque et sunt velit doloremque laudantium. Reprehenderit obcaecati nisi officiis itaque a magni dolorem cum libero necessitatibus dolore adipisci ipsa placeat eius optio accusantium corporis, quisquam praesentium explicabo ab labore? Nesciunt nam fuga est architecto? Non			Assumenda doloribus laboriosam fuga alias eius, impedit eveniet ab in consequuntur possimus est similique cumque molestiae quia blanditiis eaque delectus libero ullam quaerat quae veritatis at temporibus exercitationem. Laudantium, aliquid!",
     //     img:
     //         "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-    // },
-    // {
-    //     id: 6,
-    //     icon: "https://via.placeholder.com/200",
-    //     title: "Banking App",
-    //     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum iusto beatae soluta molestias hic, libero commodi optio corporis consequatur voluptate voluptatum. Consectetur, repellat cumque et sunt velit doloremque laudantium. Reprehenderit obcaecati nisi officiis itaque a magni dolorem cum libero necessitatibus dolore adipisci ipsa placeat eius optio accusantium corporis, quisquam praesentium explicabo ab labore? Nesciunt nam fuga est architecto? Non			Assumenda doloribus laboriosam fuga alias eius, impedit eveniet ab in consequuntur possimus est similique cumque molestiae quia blanditiis eaque delectus libero ullam quaerat quae veritatis at temporibus exercitationem. Laudantium, aliquid!",
-    //     img:
-    //         "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
     // },
 ];
 

@@ -87,7 +87,7 @@ export default function Portfolio() {
 							setProject(d);
 						}}
 					>
-						<img src={d.img} alt="" />
+						<img src={process.env.PUBLIC_URL + d.img} alt="" />
 						<h3>{d.title}</h3>
 					</div>
 				))}
@@ -101,7 +101,7 @@ export default function Portfolio() {
 					desc={project.desc}
 					site={project.site}
 					git={project.git}
-					img={project.img}
+					img={process.env.PUBLIC_URL + project.img}
 				/>
 			)}
 		</div>

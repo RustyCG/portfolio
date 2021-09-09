@@ -3,6 +3,7 @@ import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import { ExpandMore } from "@material-ui/icons";
+import { Button } from "@material-ui/core";
 
 export default function Intro() {
 	const textRef = useRef();
@@ -34,9 +35,26 @@ export default function Intro() {
 					<h3>
 						<span ref={textRef}></span>
 					</h3>
+					<div className="button-container">
+						<div className="btn-wrap">
+							<a href="#about" className="btn">
+								About Me
+							</a>
+						</div>
+						<div className="btn-wrap">
+							<a href="#portfolio" className="btn">
+								Portfolio
+							</a>
+						</div>
+						<div className="btn-wrap">
+							<a href="#contact" className="btn">
+								Contact
+							</a>
+						</div>
+					</div>
 				</div>
 
-				<a href="#portfolio">
+				<a className="arrow-wrapper" href="#portfolio">
 					<ExpandMore className="downarrow" />
 					{/* <img src="assets/down.png" alt="" /> */}
 				</a>

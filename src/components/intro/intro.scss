@@ -1,134 +1,171 @@
 @import "../../global.scss";
 
 .intro {
-    color: $mainLightColor;
-    display: flex;
+	color: $mainLightColor;
+	display: flex;
 
-    @include mobile {
-        flex-direction: column;
-        align-items: center;
-    }
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+	}
 
-    .left {
-        flex: 0.5;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
+	.left {
+		flex: 0.5;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
 
-        @include mobile {
-            flex-direction: column;
-            align-items: center;
-        }
+		@include mobile {
+			flex-direction: column;
+			align-items: center;
+		}
 
-        .imgContainer {
-            width: 800px;
-            height: 800px;
-            background-image: linear-gradient(to top right, #4c5b80,#93a5cf, #e4efe9);
-            border-radius: 50%;
-            display: flex;
-            align-items: flex-end;
-            justify-content: left;
-            float: right;
+		.imgContainer {
+			width: 800px;
+			height: 800px;
+			background-image: linear-gradient(
+				to top right,
+				#4c5b80,
+				#93a5cf,
+				#e4efe9
+			);
+			border-radius: 50%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: left;
+			float: right;
 
-            @include mobile {
-                width: 80%;
-                height: auto;
-                align-items: flex-end;
-                border-radius: 50%;
-            }
+			@include mobile {
+				width: 80%;
+				height: auto;
+				align-items: flex-end;
+				border-radius: 50%;
+			}
 
-            img {
-                height: 90%;
+			img {
+				height: 90%;
 
-                @include mobile {
-                    height: 90%;
-                    align-items: flex-start;
-                }
-            }
-        }
-    }
-    .right {
-        flex: 0.5;
-        position: relative;
+				@include mobile {
+					height: 90%;
+					align-items: flex-start;
+				}
+			}
+		}
+	}
+	.right {
+		flex: 0.5;
+		position: relative;
 
-        .wrapper {
-            width: 100%;
-            height: 100%;
-            padding-left: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+		.wrapper {
+			width: 100%;
+			height: 100%;
+			padding-left: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 
-            @include mobile {
-                padding-left: 0;
-                align-items: center;
-            }
+			@include mobile {
+				padding-left: 0;
+				align-items: center;
+			}
 
-            h1 {
-                font-size: 60px;
-                margin: 10px 0;
+			h1 {
+				font-size: 60px;
+				margin: 10px 0;
 
-                @include mobile {
-                    font-size: 40px;
-                }
-            }
-            h2 {
-                font-size: 35px;
-            }
-            h3 {
-                font-size: 30px;
+				@include mobile {
+					font-size: 40px;
+				}
+			}
+			h2 {
+				font-size: 35px;
+			}
+			h3 {
+				font-size: 30px;
 
-                @include mobile {
-                    font-size: 20px;
-                }
+				@include mobile {
+					font-size: 20px;
+				}
 
-                span {
-                    font-size: inherit;
-                    color: #aeaeae;
-                }
+				span {
+					font-size: inherit;
+					color: #aeaeae;
+				}
 
-                .ityped-cursor {
-                    animation: blink 1s infinite;
-                }
+				.ityped-cursor {
+					animation: blink 1s infinite;
+				}
 
-                @keyframes blink {
-                    50% {
-                        opacity: 1;
-                    }
-                    100% {
-                        opacity: 0;
-                    }
-                }
-            }
-        }
-        a {
-            position: absolute;
-            bottom: 10px;
-            // left: 40%;
+				@keyframes blink {
+					50% {
+						opacity: 1;
+					}
+					100% {
+						opacity: 0;
+					}
+				}
+			}
+			.button-container {
+				margin-top: 2rem;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				width: 80%;
+				height: auto;
 
-            // img {
-            //     width: 30px;
-            //     animation: arrowBlink 2s infinite;
-            // }
+				.btn-wrap {
+					color: red;
+					cursor: pointer;
+					margin-right: 2rem;
+					padding-top: 0.2rem;
+					padding-bottom: 0.2rem;
+					padding-right: 0.5rem;
+					padding-left: 0.5rem;
+					border: none;
+					border-radius: 8px;
+					background-color: $mainOverlayColor;
+					backdrop-filter: blur(5px);
+					-webkit-backdrop-filter: blur(5px);
+					-webkit-box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+					-moz-box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+					box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
 
-            .downarrow {
-                width: 4vw;
-                height: 4vh;
-                color: $mainLightColor;
-                animation: arrowBlink 4s infinite;
-            }
+					.btn {
+						text-decoration: none;
+						color: white;
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+		.arrow-wrapper {
+			position: absolute;
+			bottom: 10px;
+			// left: 40%;
 
-            @keyframes arrowBlink {
-                50% {
-                    opacity: 1;
-                }
-                
-                100% {
-                    opacity: 0;
-                }
-            }
-        }
-    }
+			// img {
+			//     width: 30px;
+			//     animation: arrowBlink 2s infinite;
+			// }
+
+			.downarrow {
+				width: 4vw;
+				height: 4vh;
+				color: $mainLightColor;
+				animation: arrowBlink 4s infinite;
+			}
+
+			@keyframes arrowBlink {
+				50% {
+					opacity: 1;
+				}
+
+				100% {
+					opacity: 0;
+				}
+			}
+		}
+	}
 }

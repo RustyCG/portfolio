@@ -1,0 +1,130 @@
+@import "../../global.scss";
+
+.about {
+	color: $mainLightColor;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		color: $mainLightColor;
+		margin-bottom: 2rem;
+
+		@include mobile {
+			font-size: 20px;
+		}
+	}
+
+	.mainContainer {
+		display: flex;
+		width: 50vw;
+		// background-color: yellow;
+		overflow: hidden;
+
+		@include mobile {
+			width: 100%;
+			padding: 0.8rem;
+		}
+
+		.leftContainer {
+			flex: 1;
+			overflow: hidden;
+			color: $mainLightColor;
+			padding: 20px 20px 10px 20px;
+			margin-right: .5rem;
+			border-radius: 8px;
+			background-color: $mainOverlayColor;
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			-webkit-box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+			-moz-box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+			box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+
+			@include mobile {
+				display: none;
+			}
+
+			.title {
+				display: flex;
+				justify-content: center;
+
+				h4 {
+					font-size: 1.5rem;
+					font-weight: 500;
+					margin-top: 0;
+					margin-bottom: 0.5rem;
+					border-bottom: 0.5px solid black;
+				}
+			}
+
+			ul {
+				padding: 0;
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				font-size: 1rem;
+				font-weight: 300;
+
+				li {
+					padding-left: none;
+					margin-bottom: 0.2rem;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					font-size: 1rem;
+					font-weight: 400;
+
+					.arrow {
+						margin-right: 0.2rem;
+						padding-left: 0;
+						justify-content: flex-start;
+					}
+				}
+			}
+		}
+		.rightContainer {
+			flex: 6;
+			padding: 20px 25px 10px 20px;
+			overflow: hidden;
+			color: $mainLightColor;
+			margin-right: 1rem;
+			border-radius: 8px;
+			background-color: $mainOverlayColor;
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			-webkit-box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+			-moz-box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+			box-shadow: 0px 7px 18px 10px rgba(8, 8, 8, 1);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			@include mobile {
+				width: 100%;
+				padding: 0.8rem;
+			}
+
+			// .title {
+			// 	display: flex;
+			// 	justify-content: flex-start;
+			// 	h4 {
+			// 		font-size: 2rem;
+			// 		font-weight: 500;
+			// 		margin-top: 0;
+			// 		margin-bottom: 1.2rem;
+			// 	}
+			// }
+			.profile {
+				p {
+					font-size: 1.5rem;
+					font-weight: 400;
+					line-height: 2.1rem;
+				}
+			}
+		}
+	}
+}

@@ -80,38 +80,44 @@ export default function Contact() {
 
 			<div className="contactContainer">
 				<div className="leftContainer">
-					<h4>Contact Information</h4>
-					<p>
-						Get in contact with me directly by filling out the form
-						and clicking send or via my details below.
-					</p>
-					<div className="iconText">
-						<Phone className="icon" />
-						<span className="contactInfo">(+61) 0402 644 504</span>
+					<div className="contactTopline">
+						<h4>Contact Information</h4>
+						<p>
+							Get in contact with me directly by filling out the
+							form and clicking send or via my details below.
+						</p>
 					</div>
-					<div className="iconText">
-						<Mail className="icon" />
-						<span className="contactInfo">
-							cameron.gumley@gmail.com
-						</span>
-					</div>
-					<div className="iconText">
-						<GitHub className="icon" />
-						<a
-							href="https://github.com/RustyCG"
-							className="contactInfo"
-						>
-							github.com/RustyCG
-						</a>
-					</div>
-					<div className="iconText">
-						<LinkedIn className="icon" />
-						<a
-							href="https://linkedin.com/in/cameron-gumley"
-							className="contactInfo"
-						>
-							linkedin.com/in/cameron-gumley
-						</a>
+					<div className="contactLinks">
+						<div className="iconText">
+							<Phone className="icon" />
+							<span className="contactInfo">
+								(+61) 0402 644 504
+							</span>
+						</div>
+						<div className="iconText">
+							<Mail className="icon" />
+							<span className="contactInfo">
+								cameron.gumley@gmail.com
+							</span>
+						</div>
+						<div className="iconText">
+							<GitHub className="icon" />
+							<a
+								href="https://github.com/RustyCG"
+								className="contactInfo"
+							>
+								github.com/RustyCG
+							</a>
+						</div>
+						<div className="iconText">
+							<LinkedIn className="icon" />
+							<a
+								href="https://linkedin.com/in/cameron-gumley"
+								className="contactInfo"
+							>
+								linkedin.com/in/cameron-gumley
+							</a>
+						</div>
 					</div>
 
 					{/* <div className="socialMedia">
@@ -181,31 +187,27 @@ export default function Contact() {
 										type="radio"
 										id="radioPhone"
 										name="type"
-										value={formState.reply="phone"}
+										value={(formState.reply = "phone")}
 										onChange={updateFormControl}
 									/>
-									<label htmlFor="radioPhone">
-										Call
-									</label>
+									<label htmlFor="radioPhone">Call</label>
 								</div>
 								<div className="radioBtn">
 									<input
 										type="radio"
 										id="radioEmail"
 										name="type"
-										value={formState.reply="email"}
+										value={(formState.reply = "email")}
 										onChange={updateFormControl}
 									/>
-									<label htmlFor="radioEmail">
-										Email
-									</label>
+									<label htmlFor="radioEmail">Email</label>
 								</div>
 								<div className="radioBtn">
 									<input
 										type="radio"
 										id="radioLinkedin"
 										name="type"
-										value={formState.reply="linkedin"}
+										value={(formState.reply = "linkedin")}
 										onChange={updateFormControl}
 									/>
 									<label htmlFor="radioLinkedin">

@@ -34,7 +34,8 @@
 
 	.contactContainer {
 		display: flex;
-		width: 1200px;
+		// width: 1200px;
+		width: 50vw;
 		border-radius: 8px;
 		overflow: hidden;
 		padding: 15px 10px 15px 10px;
@@ -59,51 +60,63 @@
 			overflow: hidden;
 			background-color: rgba(0, 0, 171, 0.527);
 			color: $mainLightColor;
+			justify-content: space-evenly;
 
 			@include mobile {
 				display: none;
 			}
 
-			h4 {
-				font-size: 2rem;
-				font-weight: 500;
-				margin-top: 0;
-				margin-bottom: 1.2rem;
+			.contactTopline {
+				h4 {
+					font-size: 2rem;
+					font-weight: 500;
+					margin-top: 0;
+					margin-bottom: 1.2rem;
+				}
+
+				p {
+					font-size: 1.2rem;
+					margin: 0;
+					color: rgba(242, 242, 242, 0.8);
+					font-weight: 300;
+					margin-bottom: 1.8rem;
+				}
 			}
 
-			p {
-				font-size: 1.2rem;
-				margin: 0;
-				color: rgba(242, 242, 242, 0.8);
-				font-weight: 300;
-				margin-bottom: 1.8rem;
-			}
-
-			.iconText {
+			.contactLinks {
+				// height: 100%;
 				display: flex;
-				align-items: center;
-				justify-content: flex-start;
-				margin-bottom: 1rem;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
 
-				.icon {
-					width: 25px;
-					height: auto;
-					margin-right: 0.8rem;
-					color: $mainLightColor;
-				}
-				span {
-					font-size: 1rem;
-					font-weight: 300;
-					color: $mainLightColor;
-				}
-				a {
-					font-size: 1rem;
-					font-weight: 300;
-					text-decoration: none;
-					color: $mainLightColor;
-					cursor: pointer;
+				.iconText {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					margin-bottom: 1rem;
+
+					.icon {
+						width: 25px;
+						height: auto;
+						margin-right: 0.8rem;
+						color: $mainLightColor;
+					}
+					span {
+						font-size: 1rem;
+						font-weight: 300;
+						color: $mainLightColor;
+					}
+					a {
+						font-size: 1rem;
+						font-weight: 300;
+						text-decoration: none;
+						color: $mainLightColor;
+						cursor: pointer;
+					}
 				}
 			}
+
 			.socialMedia {
 				display: flex;
 				justify-content: space-between;
@@ -210,7 +223,7 @@
 				.message {
 					@include mobile {
 						width: 90%;
-                        font-size: 0.9rem;
+						font-size: 0.9rem;
 					}
 				}
 				&:nth-child(2) {
@@ -233,7 +246,7 @@
 
 					@include mobile {
 						justify-content: center;
-                        margin-bottom: 0.5rem;
+						margin-bottom: 0.5rem;
 					}
 
 					.radioBtn {
@@ -274,10 +287,10 @@
 					text-transform: uppercase;
 					border-radius: 8px;
 
-                    @include mobile {
-                        width: 100px;
-                        height: 20px
-                    }
+					@include mobile {
+						width: 100px;
+						height: 20px;
+					}
 
 					&:hover {
 						color: blue;
