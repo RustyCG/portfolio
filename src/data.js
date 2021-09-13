@@ -36,10 +36,10 @@ export const featuredPortfolio = [
         icon: "VideogameAsset",
         title: "Crypto Currency Dashboard",
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum iusto beatae soluta molestias hic, libero commodi optio corporis consequatur voluptate voluptatum. Consectetur, repellat cumque et sunt velit doloremque laudantium. Reprehenderit obcaecati nisi officiis itaque a magni dolorem cum libero necessitatibus dolore adipisci ipsa placeat eius optio accusantium corporis, quisquam praesentium explicabo ab labore? Nesciunt nam fuga est architecto? Non			Assumenda doloribus laboriosam fuga alias eius, impedit eveniet ab in consequuntur possimus est similique cumque molestiae quia blanditiis eaque delectus libero ullam quaerat quae veritatis at temporibus exercitationem. Laudantium, aliquid!",
-        site: "",
-        git: "",
+        site: "https://github.com/RustyCG/crypto-dashboard",
+        git: "https://github.com/RustyCG/crypto-dashboard",
         img:
-            "https://via.placeholder.com/400",
+            "/assets/cryptodashboard.png",
     },
     // {
     //     id: 5,
