@@ -6,8 +6,8 @@ export const featuredPortfolio = [
         icon: "VideogameAsset",
         title: "Tic Tac Toe Game",
         desc: "Simple logic based game built using DOM manipulations and front-end languages HTML, CSS and Javascript.",
-        site: "https://rustycg.github.io/Project1/",
-        git: "https://github.com/RustyCG/Project1",
+        site: "https://rustycg.github.io/Project1_Tic-Tac-Toe",
+        git: "https://github.com/RustyCG/Project1_Tic-Tac-Toe",
         img:
             "/assets/TicTacToe.png",
     },
@@ -17,7 +17,7 @@ export const featuredPortfolio = [
         title: "ProjecToo",
         desc: "ProjectToo is a database backed web application that allows suppliers & manufacturers to privately list equipment - superseeded capital equipment, surplus instruments, near-expired consumable items, etc - and connect those items with the NGO's, NFPs, and Charitable Organisations that need them.",
         site: "https://secure-escarpment-96330.herokuapp.com/",
-        git: "https://github.com/RustyCG/ProjecToo",
+        git: "https://github.com/RustyCG/Project2_ProjecToo",
         img:
             "/assets/ProjecToo.png",
     },
@@ -27,7 +27,7 @@ export const featuredPortfolio = [
         title: "HereI",
         desc: "A full stack app built for users to be able to book attractions prior to or whilst travelling. Built in Node.js following CRUD operations this webapp makes use of a PostgreSQL database ontop of the Express.js framework.Client - side programmed using HTML & CSS & JS. API integration also seen through the below: Stripe payment gateway, Bing maps. Other cools technologies: Nodemailer, BCrypt, Passport.js",
         site: "https://thawing-basin-55117.herokuapp.com/",
-        git: "https://github.com/RustyCG/herei/tree/main",
+        git: "https://github.com/RustyCG/herei",
         img:
             "/assets/HereI.png",
     },
@@ -35,8 +35,8 @@ export const featuredPortfolio = [
         id: 4,
         icon: "VideogameAsset",
         title: "Crypto Currency Dashboard",
-        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, harum iusto beatae soluta molestias hic, libero commodi optio corporis consequatur voluptate voluptatum. Consectetur, repellat cumque et sunt velit doloremque laudantium. Reprehenderit obcaecati nisi officiis itaque a magni dolorem cum libero necessitatibus dolore adipisci ipsa placeat eius optio accusantium corporis, quisquam praesentium explicabo ab labore? Nesciunt nam fuga est architecto? Non			Assumenda doloribus laboriosam fuga alias eius, impedit eveniet ab in consequuntur possimus est similique cumque molestiae quia blanditiis eaque delectus libero ullam quaerat quae veritatis at temporibus exercitationem. Laudantium, aliquid!",
-        site: "https://github.com/RustyCG/crypto-dashboard",
+        desc: "This project is currently being lightly updated. Further information and details to follow.",
+        site: "https://rustycg.github.io/crypto-dashboard/",
         git: "https://github.com/RustyCG/crypto-dashboard",
         img:
             "/assets/cryptodashboard.png",
